@@ -1,33 +1,90 @@
 :root{
-  --textFont:'Vollkorn', sans-serif;
-  --azul: #235D8F
+  /*COLORES*/
+  --negro:#000;
+  --azul_oscuro:#1B262C;
+  --azul_oscuro_2:#0F4C75;
+  --azul_claro:#3282B8;
+  --azul_claro_2:#BBE1FA;
+  --blanco:#fff;
+  
+  /*FUENTES*/
 }
 *{
   padding: 0;
   margin: 0;
 }
 
-/*COMPONENT HEADER*/
-header{
-  min-height: 30px;
-  background-color: var(--azul);
+/*-----JUMBOTRON-----*/
+.Jumbotron{
+  min-height: 60vh;
+  background-color: var(--azul_oscuro);
 }
-/*================*/
+.Jumbotron .container{
+  margin: 0 100px;
+}
+.Jumbotron .container nav ul{
+  display: flex;
+  list-style: none;
+  float: right;
+  justify-content: flex-end;
+  width: 100%;
+}
+.Jumbotron .container nav ul li{
+  display: block;
+  color: var(--blanco);
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.Jumbotron .container nav ul li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
 
-/*MAIN CONTAINER*/
-.container-app{
-  margin: 0 7%;
-  min-height: 20px;
+.Jumbotron .container .profile{
+  text-align: center;
+  padding: 60px 0;
 }
-.container-app h1{
-  font-size: 50px;
-  font-family: var(--textFont);
-  background: red;
+.Jumbotron .container .profile .container-photo img{
+  border-radius: 50%;
+  border: 5px solid var(--blanco);
+  box-sizing: border-box;
+  width: 200px;
+  margin-top: 30px;
 }
-/*===============*/
-/*COMPONENT FOOTER*/
-footer{
-  min-height: 30px;
-  background-color: var(--azul);
+.Jumbotron .container .profile h1{
+  margin: 0;
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: var(--blanco);
 }
-/*================*/
+.Jumbotron .container .profile h1 span{
+  animation-name: escribir;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font-weight: bold;
+  color: white;
+  
+}
+.Jumbotron .container .profile .container-redes{
+  margin-top: 20px;
+}
+.Jumbotron .container .profile .container-redes img{
+  margin-right: 20px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--azul_claro);
+  background: white;
+}
+
+@keyframes escribir{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+
+  }
+}
+/*-------------------*/
