@@ -1,0 +1,63 @@
+@media screen and (max-width: 1023px){
+    
+}
+@media screen and (max-width: 767px){
+    
+}
+@media screen and (max-width: 599px){
+    
+}
+
+@media screen and (max-width: 479px){
+    .Jumbotron .container{
+        margin: 0;
+    }
+    .Jumbotron .container nav{
+        position: absolute;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, .9);
+        
+    }
+    .Jumbotron .container nav.active{
+        left: 0;
+    }
+    .Jumbotron .container button{
+        display: flex;
+        font-size: 30px;
+    }
+    .Jumbotron .container nav ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: inherit;
+        width: inherit;
+    }
+    .Jumbotron .container .profile{
+        padding: 20px 0;
+    }
+    .Jumbotron .container .profile .container-photo img{
+        width: 170px;
+    }
+    .Jumbotron .container .profile h1{
+        font-size: 20px;
+    }
+    .Jumbotron .container .profile .container-redes img{
+        width: 40px;        
+    }
+    .Jumbotron .container .profile .container-redes .wap-web{
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+      }
+      .Jumbotron .container .profile .container-redes .wap-mobile{
+        display: block;
+        visibility: visible;
+        opacity: 1;
+      }
+}
+

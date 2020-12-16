@@ -21,6 +21,11 @@
 }
 .Jumbotron .container{
   margin: 0 100px;
+  position: relative;
+}
+.Jumbotron .container nav{
+  position: relative;
+  transition: .3s;
 }
 .Jumbotron .container nav ul{
   display: flex;
@@ -28,6 +33,22 @@
   float: right;
   justify-content: flex-end;
   width: 100%;
+}
+.Jumbotron .container button{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 10px;
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: 0;
+  color: white;
+  background: transparent;
+  z-index: 1;
 }
 .Jumbotron .container nav ul li{
   display: block;
@@ -69,9 +90,22 @@
 }
 .Jumbotron .container .profile .container-redes{
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Jumbotron .container .profile .container-redes .wap-web{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+.Jumbotron .container .profile .container-redes .wap-mobile{
+  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 .Jumbotron .container .profile .container-redes img{
-  margin-right: 20px;
+  margin: 0 10px;
   width: 50px;
   border-radius: 50%;
   border: 2px solid var(--azul_claro);
