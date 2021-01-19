@@ -63,7 +63,7 @@ const Jumbotron = () => {
                         <a href="https://www.instagram.com/dan_gorianz/" target="_blank" rel="noreferrer">
                             <img src={Instagram} alt=""/>
                         </a>
-                        <a href="https://www.linkedin.com/in/daniel-gorianz-ferrufino-296511184/" target="_blank" rel="noreferrer">
+                        <a href="https://www.linkedin.com/in/daniel-guillermo-gorianz-ferrufino-296511184" target="_blank" rel="noreferrer">
                             <img src={Linkedin} alt=""/>
                         </a>
                         <a href="https://github.com/jockeer" target="_blank" rel="noreferrer">
@@ -75,9 +75,6 @@ const Jumbotron = () => {
                         <a class="wap-mobile" data-action="open" data-phone="59176597228" data-message="" rel="noreferrer" href="https://api.whatsapp.com/send?phone=59176597228&amp;text=¡Hola Danie! Quisiera saber acerca de ti." target="_blank">
                             <img src={Whatsapp} alt=""/>
                         </a>
-                        
-                        
-
                     </figure>
                 </div>
             </div>
